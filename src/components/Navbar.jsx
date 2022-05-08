@@ -4,6 +4,7 @@ import { ReactComponent as ExploreIcon } from "../assets/svg/exploreIcon.svg";
 import { ReactComponent as PersonOutlineIcon } from "../assets/svg/personOutlineIcon.svg";
 
 import React from "react";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 function Navbar() {
   const navigate = useNavigate();

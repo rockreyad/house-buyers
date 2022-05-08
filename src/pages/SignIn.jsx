@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { ReactComponent as ArrowRightIcon } from "../assets/svg/keyboardArrowRightIcon.svg";
 import visibilityIcon from "../assets/svg/visibilityIcon.svg";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import OAuth from "../components/OAuth";
 import { toast } from "react-toastify";
 
 function SignIn() {
@@ -81,7 +82,7 @@ function SignIn() {
             </div>
           </form>
 
-          {/* Google Auth */}
+          <OAuth />
           <Link to="/sign-up" className="registerLink">
             Sign Up Instead
           </Link>

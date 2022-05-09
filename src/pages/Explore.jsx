@@ -9,9 +9,12 @@ function Explore() {
         <p className="pageHeader">Explore</p>
       </header>
       <main>
-        <p className="exploreCategoryHeading">Categories</p>
+        <p className="exploreCategoryHeading py-4">Categories</p>
         <div className="exploreCategories">
-          <Link className="hover:scale-105" to="/category/rent">
+          <Link
+            className="hover:scale-105 hover:my-2 hover:text-gray-400"
+            to="/category/rent"
+          >
             <img
               src={rentCategoryImage}
               alt="rent"
@@ -19,7 +22,10 @@ function Explore() {
             />
             <p className="exploreCategoryName">Places for rent</p>
           </Link>
-          <Link className="hover:scale-105" to="/category/sale">
+          <Link
+            className="hover:scale-105 hover:my-2 hover:text-gray-400"
+            to="/category/sale"
+          >
             <img
               src={sellCategoryImage}
               alt="sell"
